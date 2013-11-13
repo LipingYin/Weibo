@@ -21,6 +21,14 @@
 		5ABA467218334E8F00E36441 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5ABA465318334E8E00E36441 /* Foundation.framework */; };
 		5ABA467A18334E8F00E36441 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5ABA467818334E8F00E36441 /* InfoPlist.strings */; };
 		5ABA467D18334E8F00E36441 /* WeiBoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ABA467C18334E8F00E36441 /* WeiBoTests.m */; };
+		5ABA468A183355ED00E36441 /* UIUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ABA4689183355ED00E36441 /* UIUtils.m */; };
+		5ABA468B183355ED00E36441 /* UIUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ABA4689183355ED00E36441 /* UIUtils.m */; };
+		5ABA468E183355FC00E36441 /* UIViewExt.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ABA468D183355FC00E36441 /* UIViewExt.m */; };
+		5ABA468F183355FC00E36441 /* UIViewExt.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ABA468D183355FC00E36441 /* UIViewExt.m */; };
+		5ABA46921833561C00E36441 /* WXBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ABA46911833561C00E36441 /* WXBaseModel.m */; };
+		5ABA46931833561C00E36441 /* WXBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ABA46911833561C00E36441 /* WXBaseModel.m */; };
+		5ABA46961833563500E36441 /* WXHLGlobalUICommon.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ABA46951833563500E36441 /* WXHLGlobalUICommon.m */; };
+		5ABA46971833563500E36441 /* WXHLGlobalUICommon.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ABA46951833563500E36441 /* WXHLGlobalUICommon.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +61,14 @@
 		5ABA467918334E8F00E36441 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		5ABA467B18334E8F00E36441 /* WeiBoTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WeiBoTests.h; sourceTree = "<group>"; };
 		5ABA467C18334E8F00E36441 /* WeiBoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeiBoTests.m; sourceTree = "<group>"; };
+		5ABA4688183355ED00E36441 /* UIUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIUtils.h; sourceTree = "<group>"; };
+		5ABA4689183355ED00E36441 /* UIUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIUtils.m; sourceTree = "<group>"; };
+		5ABA468C183355FC00E36441 /* UIViewExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIViewExt.h; sourceTree = "<group>"; };
+		5ABA468D183355FC00E36441 /* UIViewExt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIViewExt.m; sourceTree = "<group>"; };
+		5ABA46901833561C00E36441 /* WXBaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXBaseModel.h; sourceTree = "<group>"; };
+		5ABA46911833561C00E36441 /* WXBaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXBaseModel.m; sourceTree = "<group>"; };
+		5ABA46941833563500E36441 /* WXHLGlobalUICommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXHLGlobalUICommon.h; sourceTree = "<group>"; };
+		5ABA46951833563500E36441 /* WXHLGlobalUICommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXHLGlobalUICommon.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +130,7 @@
 			children = (
 				5ABA466018334E8E00E36441 /* AppDelegate.h */,
 				5ABA466118334E8E00E36441 /* AppDelegate.m */,
+				5ABA46861833552D00E36441 /* Models */,
 				5ABA465818334E8E00E36441 /* Supporting Files */,
 			);
 			path = WeiBo;
@@ -122,6 +139,7 @@
 		5ABA465818334E8E00E36441 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				5ABA46871833554E00E36441 /* Utils */,
 				5ABA465918334E8E00E36441 /* WeiBo-Info.plist */,
 				5ABA465A18334E8E00E36441 /* InfoPlist.strings */,
 				5ABA465D18334E8E00E36441 /* main.m */,
@@ -150,6 +168,28 @@
 				5ABA467818334E8F00E36441 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5ABA46861833552D00E36441 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5ABA46901833561C00E36441 /* WXBaseModel.h */,
+				5ABA46911833561C00E36441 /* WXBaseModel.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		5ABA46871833554E00E36441 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				5ABA468C183355FC00E36441 /* UIViewExt.h */,
+				5ABA468D183355FC00E36441 /* UIViewExt.m */,
+				5ABA4688183355ED00E36441 /* UIUtils.h */,
+				5ABA46941833563500E36441 /* WXHLGlobalUICommon.h */,
+				5ABA46951833563500E36441 /* WXHLGlobalUICommon.m */,
+				5ABA4689183355ED00E36441 /* UIUtils.m */,
+			);
+			name = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,6 +303,10 @@
 			files = (
 				5ABA465E18334E8E00E36441 /* main.m in Sources */,
 				5ABA466218334E8E00E36441 /* AppDelegate.m in Sources */,
+				5ABA468A183355ED00E36441 /* UIUtils.m in Sources */,
+				5ABA468E183355FC00E36441 /* UIViewExt.m in Sources */,
+				5ABA46921833561C00E36441 /* WXBaseModel.m in Sources */,
+				5ABA46961833563500E36441 /* WXHLGlobalUICommon.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,6 +315,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				5ABA467D18334E8F00E36441 /* WeiBoTests.m in Sources */,
+				5ABA468B183355ED00E36441 /* UIUtils.m in Sources */,
+				5ABA468F183355FC00E36441 /* UIViewExt.m in Sources */,
+				5ABA46931833561C00E36441 /* WXBaseModel.m in Sources */,
+				5ABA46971833563500E36441 /* WXHLGlobalUICommon.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
